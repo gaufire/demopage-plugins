@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "demopage": {
+      "type": "http",
+      "url": "https://app.demopage.io/mcp"
+    }
+  }
+}

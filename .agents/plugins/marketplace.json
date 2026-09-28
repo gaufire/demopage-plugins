@@ -1,0 +1,20 @@
+{
+  "name": "atomsai",
+  "interface": {
+    "displayName": "AtomsAI"
+  },
+  "plugins": [
+    {
+      "name": "demopage",
+      "source": {
+        "source": "local",
+        "path": "./demopage"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

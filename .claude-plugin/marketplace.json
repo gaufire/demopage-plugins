@@ -1,0 +1,17 @@
+{
+  "name": "atomsai",
+  "owner": {
+    "name": "AtomsAI"
+  },
+  "metadata": {
+    "description": "AtomsAI plugins for AI coding tools."
+  },
+  "plugins": [
+    {
+      "name": "demopage",
+      "source": "./demopage",
+      "description": "Build a deep, detailed DemoPage for your product from its code, and get a live narrated demo link for your website.",
+      "category": "productivity"
+    }
+  ]
+}

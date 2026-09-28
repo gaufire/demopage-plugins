@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "demopage",
+  "version": "0.2.0",
+  "description": "Build a deep, detailed DemoPage for your product from its code: map every page, write what each one does, approve what buyers see, and get a live narrated demo link for your website.",
+  "author": {
+    "name": "AtomsAI",
+    "url": "https://demopage.io"
+  },
+  "homepage": "https://demopage.io",
+  "license": "MIT",
+  "keywords": ["demo", "product demo", "sales", "presales", "onboarding", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "DemoPage",
+        "shortDescription": "Turn your product's code into a live, narrated demo",
+        "longDescription": "DemoPage gives your website visitors a live, narrated demo inside your real product. This plugin maps your product from its code (routes, screens, UI text, and end-to-end tests), adds the pages as candidates to your DemoPage, and turns your demo link on once you approve them. Your code stays on your machine: only page titles, addresses, visible text, and short descriptions are sent.",
+        "developerName": "AtomsAI",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://demopage.io",
+        "privacyPolicyURL": "https://demopage.io/privacy",
+        "termsOfServiceURL": "https://demopage.io/terms",
+        "defaultPrompt": [
+          "Build my DemoPage from this repo.",
+          "Which demo pages failed their check, and how do I fix them?",
+          "What did buyers ask in DemoPage demos this month?"
+        ],
+        "brandColor": "#0B0D13",
+        "composerIcon": "./assets/logo.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}
