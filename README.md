@@ -38,4 +38,4 @@ See the [DemoPage plugin README](demopage/README.md) for ChatGPT and for connect
 
 ## License
 
-MIT. See each plugin's `LICENSE`.
+MIT. See [LICENSE](LICENSE).
