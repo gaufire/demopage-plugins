@@ -8,6 +8,7 @@
     "url": "https://demopage.io"
   },
   "homepage": "https://demopage.io",
+  "repository": "https://github.com/gaufire/demopage-plugins",
   "license": "MIT",
   "keywords": ["demo", "product demo", "sales", "presales", "onboarding", "mcp"],
   "extensions": {

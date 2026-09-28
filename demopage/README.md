@@ -40,10 +40,10 @@ Then open **Settings → MCP** and choose **Connect** next to `demopage`.
 
 ### Claude Code
 
-Add this marketplace, then install the plugin:
+Add the AtomsAI marketplace, then install the plugin:
 
 ```bash
-claude plugin marketplace add <path or GitHub repository of this marketplace>
+claude plugin marketplace add gaufire/demopage-plugins
 claude plugin install demopage@atomsai
 ```
 
@@ -53,10 +53,10 @@ For the MCP server alone: `claude mcp add --transport http demopage https://app.
 
 ### Codex
 
-Add this marketplace, then install DemoPage from the Plugins directory:
+Add the AtomsAI marketplace, then install DemoPage from the Plugins directory:
 
 ```bash
-codex plugin marketplace add <path or GitHub repository of this marketplace>
+codex plugin marketplace add gaufire/demopage-plugins
 ```
 
 For the MCP server alone:

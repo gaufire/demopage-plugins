@@ -6,20 +6,36 @@ Plugins for AI coding tools, published by AtomsAI.
 | --- | --- |
 | [DemoPage](demopage/README.md) | Builds a live, narrated demo of your product from its code. |
 
-This folder is a marketplace for Cursor, Claude Code, and Codex:
+This repository is a plugin marketplace for Cursor, Claude Code, and Codex.
 
-- Cursor reads `.cursor-plugin/marketplace.json`.
-- Claude Code reads `.claude-plugin/marketplace.json`.
-- Codex and ChatGPT read `.agents/plugins/marketplace.json`.
+## Add it
 
-Each plugin carries a portable `plugin.json` and `mcp.json` ([Agent Plugins 1.0](https://agent-plugins.org), read by Cursor and Codex), plus `.claude-plugin/plugin.json` and `.mcp.json` for Claude Code.
+Claude Code:
 
-## Publishing
+```bash
+claude plugin marketplace add gaufire/demopage-plugins
+claude plugin install demopage@atomsai
+```
 
-Marketplaces install from a public Git repository, so publish this folder as its own repository root. Then:
+Codex:
 
-1. Cursor: submit the repository at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish).
-2. Claude Code: users run `claude plugin marketplace add <owner>/<repo>`. To list it in Anthropic's directory, submit it there.
-3. Codex and ChatGPT: users run `codex plugin marketplace add <owner>/<repo>`. To list it in OpenAI's plugin directory, submit it there.
+```bash
+codex plugin marketplace add gaufire/demopage-plugins
+```
 
-Keep the `version` in `demopage/plugin.json` and `demopage/.claude-plugin/plugin.json` the same. The DemoPage app serves the skills as MCP prompts from a copy; after editing a `SKILL.md`, run `node scripts/sync-plugin-skills.mjs` in the app repository.
+Then install DemoPage from the Plugins directory.
+
+Cursor: install DemoPage from the Cursor Marketplace, or copy the `demopage` folder to `~/.cursor/plugins/local/demopage` and run **Developer: Reload Window**.
+
+See the [DemoPage plugin README](demopage/README.md) for ChatGPT and for connecting the MCP server on its own.
+
+## Layout
+
+- `.cursor-plugin/marketplace.json` is read by Cursor.
+- `.claude-plugin/marketplace.json` is read by Claude Code.
+- `.agents/plugins/marketplace.json` is read by Codex and ChatGPT.
+- Each plugin carries a portable `plugin.json` and `mcp.json` ([Agent Plugins 1.0](https://agent-plugins.org), read by Cursor and Codex), plus `.claude-plugin/plugin.json` and `.mcp.json` for Claude Code.
+
+## License
+
+MIT. See each plugin's `LICENSE`.
