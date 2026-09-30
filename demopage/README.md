@@ -22,7 +22,7 @@ Nothing a tool sends goes into a demo by itself. Every page waits for your appro
 
 ## Before you start
 
-DemoPage is invite-only for now. You need a DemoPage account; [request an invite](https://demopage.io/early-access) if you don't have one. Signed-in pages also need a demo login for your product, which you add in the [portal](https://app.demopage.io/portal), step 5.
+You need a DemoPage account. [Start free](https://app.demopage.io/signup) with your work email (no card), or [talk to us](https://demopage.io/early-access). Signed-in pages also need a demo login for your product, which you add in the [portal](https://app.demopage.io/portal), step 5. The [setup guide](https://demopage.io/docs) covers the rest.
 
 ## Install
 

@@ -34,7 +34,7 @@ The DemoPage MCP server (`demopage`) acts for the one vendor account the user si
 Call `demopage_status`.
 
 - If the call asks the user to sign in, tell them their AI tool will open "Sign in with DemoPage"; they sign in with their DemoPage account and choose Allow.
-- If there is no account: DemoPage is invite-only. Send the user to https://demopage.io/early-access, then stop.
+- If there is no account: send the user to https://app.demopage.io/signup to start free with their work email (or https://demopage.io/early-access to talk to the team), then stop.
 - If `reading` is true, DemoPage is still reading the public website. Carry on mapping; import once it finishes.
 - Note the `website` domain. All addresses must be on it.
 
