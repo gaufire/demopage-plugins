@@ -1,6 +1,6 @@
 # DemoPage plugin
 
-Published by AtomsAI.
+Published under the AtomsAI developer identity. DemoPage is operated by SaaS Labs US, Inc.; its legal operator and contact details are on the [Privacy Policy](https://demopage.io/privacy) and [Terms of Service](https://demopage.io/terms).
 
 [DemoPage](https://demopage.io) gives your website visitors a live, narrated demo inside your real product. This plugin lets your AI coding tool build that demo from your code. It maps every screen from your routes, navigation, UI text, and end-to-end tests, writes what each page lets a customer do, and sends the pages to your DemoPage as candidates. You approve the ones buyers should see, and your demo link turns on.
 
@@ -16,7 +16,9 @@ The same two guides are offered as prompts by the MCP server, so a tool connecte
 
 ## What gets sent, and what doesn't
 
-Your code stays on your machine. The tool sends DemoPage only a title, an https address, a short piece of text visible on the page, a one or two sentence description, and optional keywords for each page. It never sends source code, file contents, environment values, or secrets.
+When this plugin runs in a coding client that can read your local repository, your source files stay in that client. The client sends DemoPage the candidate-page fields you review: a title, canonical query-free https address, short visible proof text, one or two sentence description, whether sign-in is needed, optional keywords or click path, and a short note naming the kinds of local sources used. It does not send source files, repository credentials, environment values, or secrets.
+
+The MCP connection itself does not grant repository access. A client without a local filesystem or deliberately attached source files can manage your DemoPage account, but it cannot honestly map code. Once connected, it can read your DemoPage status, catalog, link, readiness results, and the last 30 days of results, including the latest leads. DemoPage stores the connected tool's registered name and connection/last-use times; standard server request times and errors may appear in operational logs. The [Privacy Policy](https://demopage.io/privacy) covers retention and recipients.
 
 Nothing a tool sends goes into a demo by itself. Every page waits for your approval, then it's loaded in a demo browser. If the expected text isn't on the page, the page stays out. Demos never save, send, pay, or delete anything, and checkout, billing, API key, password, and sign-up screens are refused.
 

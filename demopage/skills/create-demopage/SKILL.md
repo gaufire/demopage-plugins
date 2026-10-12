@@ -23,13 +23,16 @@ The DemoPage MCP server (`demopage`) acts for the one vendor account the user si
 ## Ground rules
 
 - **The code stays here.** Send only what the tool schema asks for: a title, a full https address, a short piece of visible text, a one or two sentence description, and optional keywords or click path. Never send source code, file contents, environment values, secrets, internal hostnames, customer names, or customer data.
+- **Repository access is a prerequisite.** This workflow works only when the current client can actually read the user's local repository or files the user deliberately attached. The DemoPage MCP server cannot read a repository. If no filesystem or attached source is available, say that plainly and stop; do not imply that ChatGPT or DemoPage inspected code it could not access.
 - **The user approves.** Importing is safe: every page arrives held. Never call `demopage_approve_pages` until the user has seen the list and said which pages to approve. "Approve all" from the user is fine; your own judgment is not.
 - **Read-only screens only.** Demos never save, send, pay, or delete anything; DemoPage blocks those actions in every demo. Do not map screens whose purpose is money, keys, or account security: checkout, billing, payment methods, invoices to pay, API keys or tokens, passwords, two-factor setup, sign-up, login, logout, account deletion. DemoPage refuses these anyway.
-- **Real addresses on the product's domain.** Every `url` must be https on the website domain `demopage_status` reports, or one of its subdomains (for example `app.` for the product itself). Never localhost, staging, preview, or internal hosts.
+- **Real, canonical addresses on the product's domain.** Every `url` must be https on the website domain `demopage_status` reports, or one of its subdomains (for example `app.` for the product itself). Remove every query string and fragment before sending it; they can contain tokens, emails, or other sensitive state. Never localhost, staging, preview, or internal hosts.
 
 ## Steps
 
 ### 1. Check the account
+
+First verify that this client has a filesystem or attached source it can inspect. If it does not, explain that the MCP connection can manage DemoPage but cannot supply code access, and suggest running this skill in Cursor, Claude Code, or Codex from the repository, or attaching a bounded set of route/navigation files.
 
 Call `demopage_status`.
 
