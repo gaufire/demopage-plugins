@@ -3,20 +3,7 @@
   "mcpServers": {
     "demopage": {
       "type": "streamable-http",
-      "url": "https://app.demopage.io/mcp",
-      "extensions": {
-        "com.openai": {
-          "auth": {
-            "type": "oauth",
-            "client": {
-              "mode": "dcr"
-            },
-            "registrationUrl": "https://app.demopage.io/oauth/register",
-            "resource": "https://app.demopage.io/mcp",
-            "baseScopes": ["demopage"]
-          }
-        }
-      }
+      "url": "https://app.demopage.io/mcp"
     }
   }
 }

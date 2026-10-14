@@ -1,6 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "demopage",
+  "name": "app-6aba597c59a08191921381206d16486f",
   "version": "0.3.0",
   "description": "Build a deep, detailed DemoPage for your product from its code: map every page, write what each one does, approve what buyers see, and get a live narrated demo link for your website.",
   "author": {
