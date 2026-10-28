@@ -70,6 +70,10 @@ codex mcp login demopage
 
 ### ChatGPT
 
+Install the published [DemoPage plugin on ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6aba597c59a08191921381206d16486f), sign in with DemoPage, and choose **Allow**.
+
+To connect the MCP server directly in Developer mode instead:
+
 1. Open **Settings → Security and login** and turn on **Developer mode**.
 2. Open **Plugins**, choose **+**, and enter `https://app.demopage.io/mcp` with OAuth.
 3. Sign in with DemoPage and choose **Allow**.
