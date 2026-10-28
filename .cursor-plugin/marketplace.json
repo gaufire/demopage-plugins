@@ -1,10 +1,10 @@
 {
-  "name": "atomsai",
+  "name": "gaufire",
   "owner": {
-    "name": "AtomsAI"
+    "name": "Gaufire"
   },
   "metadata": {
-    "description": "AtomsAI plugins for AI coding tools."
+    "description": "Plugins for AI coding tools by Gaufire."
   },
   "plugins": [
     {
